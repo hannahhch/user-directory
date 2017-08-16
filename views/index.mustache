@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
     <h1>Index</h1>
@@ -10,7 +11,7 @@
     {{#users}}
     <div class = 'boxes'>
       <p><img src = {{avatar}}></p>
-      <p>{{name}}</p>
+      <p><a href = {{id}}>{{name}}</a></p>
       <p>{{job}}</p>
     {{/users}}
   </div>

@@ -9,15 +9,17 @@ app.engine('mustache', mustache());
 app.set('views', './views');
 app.set('view engine', 'mustache');
 
-
-
+app.use(express.static(__dirname + '/public'));
 
 
 app.get('/users/', function(req, res) {
   res.render('index', file);
-
 });
 
+
+app.get('/:id/', function(req, res) {
+  res.render('bots', file.users[req.params.id-1]);
+});
 
 
 app.listen(port, function(){
