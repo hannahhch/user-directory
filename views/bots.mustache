@@ -15,22 +15,36 @@
         </div>
         <div class = "card-top-text">
           <h1>{{name}}</h1>
-          <p class = "line-one">{{address.city}}, {{address.country}} | {{job}}, {{company}}</p>
-          <p class = "line-two">{{email}} | {{phone}}</p>
+          {{#job}}
+            <p class = "line-one">{{address.city}}, {{address.country}} | {{job}}, {{company}}</p>
+            <p class = "line-two">{{email}} | {{phone}}</p>
+            {{/job}}
+            {{^job}}
+            <p class = "line-one">{{address.city}}, {{address.country}} | <span id = "hireme">Avaliable for hire!</span></p>
+            <p class = "line-two">{{email}} | {{phone}}</p>
+
+            {{/job}}
+
         </div>
     </div>
     <div class = "card-bottom">
       <div class = "card-bottom-titles">
-        <h4>Education</h4>
-        <h4>Skills</h4>
+        <table>
+          {{#university}}
+            <td class = "table-header">Education</td>
+            <td>{{university}}</td>
+          {{/university}}
+          <tr>
+          <td class = 'table-header'>Skills</td>
+
+          <td>{{#skills}}
+            <li>{{.}}</li>
+            {{/skills}}</td>
+          </tr>
+        </table>
+
       </div>
-      <div class = "card-bottom-text">
-      <p>{{university}}</p>
-      <p><ul>
-        <li>{{skills.0}}</li>
-        <li>{{skills.1}}</li>
-        <li>{{skills.2}}</li>
-      </ul></p>
+
     </div>
     </div>
   </body>
