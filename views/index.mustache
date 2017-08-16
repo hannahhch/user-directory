@@ -15,7 +15,13 @@
 
       <p><img src = {{avatar}}></p>
       <h3><a href = {{id}}>{{name}}</a></h3>
+      {{#job}}
       <h4>{{job}}</h4>
+      <h4>{{company}}</h4>
+      {{/job}}
+      {{^job}}
+      <p id = 'hire'>Avaliable for hire!</p>
+      {{/job}}
 
     </div>
 

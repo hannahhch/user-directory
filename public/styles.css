@@ -9,7 +9,7 @@
   border: solid 1px grey;
   border-radius: 3%;
   width: 235px;
-  height: 270px;
+  height: 300px;
   text-align: center;
   margin: 10px 5px;
 }
@@ -27,6 +27,7 @@ a {
 .card-top {
   display: flex;
   flex-direction: row;
+  margin-bottom: 25px;
 }
 
 .card-bottom{
@@ -64,4 +65,8 @@ h1 {
 p {
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
+}
+
+#hire {
+  color: #DD8F7C;
 }
