@@ -16,7 +16,7 @@
         <div class = "card-top-text">
           <h1>{{name}}</h1>
           {{#job}}
-            <p class = "line-one">{{address.city}}, {{address.country}} | {{job}}, {{company}}</p>
+            <p class = "line-one">{{#address.city}}{{address.city}},{{/address.city}} {{address.country}} | {{job}}, {{company}}</p>
             <p class = "line-two">{{email}} | {{phone}}</p>
             {{/job}}
             {{^job}}
