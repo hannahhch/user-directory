@@ -67,6 +67,14 @@ p {
   font-size: 15px;
 }
 
+h5 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  font-weight: lighter;
+  color: grey;
+  line-height: 5px;
+}
+
 #hire {
   color: #DD8F7C;
 }
