@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
     <h1>Index</h1>
     <div class = "wrapper">
-    {{#users}}
-    <div class = 'boxes'>
+
+      {{#users}}
+      <div class = 'boxes'>
+
       <p><img src = {{avatar}}></p>
-      <p><a href = {{id}}>{{name}}</a></p>
-      <p>{{job}}</p>
+      <h3><a href = {{id}}>{{name}}</a></h3>
+      <h4>{{job}}</h3>
+    </div>
+
     {{/users}}
-  </div>
   </div>
 
 
