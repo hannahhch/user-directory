@@ -5,6 +5,19 @@
     <title></title>
   </head>
   <body>
-    <p>{{name}}</p>
+    <h1>Index</h1>
+    <div class = "wrapper">
+    {{#users}}
+    <div class = 'boxes'>
+      <p><img src = {{avatar}}></p>
+      <p>{{name}}</p>
+      <p>{{job}}</p>
+    {{/users}}
+  </div>
+  </div>
+
+
+
+
   </body>
 </html>
