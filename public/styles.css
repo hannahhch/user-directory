@@ -9,7 +9,7 @@
   border: solid 1px grey;
   border-radius: 3%;
   width: 235px;
-  height: 250px;
+  height: 270px;
   text-align: center;
   margin: 10px 5px;
 }
@@ -17,4 +17,29 @@
 a {
   text-decoration: none;
   color: #3281CB;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: row;
+}
+
+.image img {
+  border-radius: 50%;
+  border: solid 1px grey;
+  padding: 5px;
+}
+
+h1 {
+  font-family: 'Archivo', sans-serif;
+  font-size: 75px;
+  font-weight: lighter;
+  margin-left: 15px;
+
 }
