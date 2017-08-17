@@ -25,6 +25,8 @@ a {
   width: 750px;
   margin: 0 auto;
   margin-top: 55px;
+  border: solid 1px black;
+  padding: 15px 0 15px 25px;
 }
 .card-top {
   display: flex;
