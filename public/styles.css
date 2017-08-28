@@ -1,3 +1,8 @@
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
 .wrapper {
   display: flex;
   justify-content: space-between;

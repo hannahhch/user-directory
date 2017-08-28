@@ -7,29 +7,27 @@
     <link href="https://fonts.googleapis.com/css?family=Archivo|Open+Sans" rel="stylesheet">
   </head>
   <body>
-    <h1>Index</h1>
     <div class = "wrapper">
-      {{#robots}}
-
-      <div class = 'boxes'>
-
-      <p><img src = {{avatar}}></p>
-      <h3><a href = {{id}}>{{name}}</a></h3>
-      {{#job}}
-      <h5>{{job}}</h4>
-      <h4>{{company}}</h4>
-      {{/job}}
-      {{^job}}
-      <p id = 'hire'>Avaliable for hire!</p>
-      {{/job}}
-
+      <div class = "header">
+        <div><h1>Index</h1></div>
+    <div>
+        <h2><a href = "#">Looking for Work</a></h2>
+        <h2><a href = "#">Currently Employeed</a></h2>
+      </div>
     </div>
-
+      {{#robots}}
+        <div class = 'boxes'>
+          <p><img src = {{avatar}}></p>
+          <h3>{{name}}</h3>
+          {{#job}}
+          <h5>{{job}}</h4>
+            <h4>{{company}}</h4>
+            {{/job}}
+            {{^job}}
+            <p id = 'hire'>Avaliable for hire!</p>
+            {{/job}}
+          </div>
     {{/robots}}
-  </div>
-
-
-
-
+    </div>
   </body>
 </html>
