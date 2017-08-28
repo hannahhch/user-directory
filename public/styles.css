@@ -1,7 +1,8 @@
 .header{
-  width: 100%;
+  width: 95%;
+  margin: 0 2.5%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .wrapper {
   display: flex;
@@ -59,12 +60,33 @@ a {
   margin-top: 15px;
 }
 
-h1 {
+h2 {
   font-family: 'Archivo', sans-serif;
   font-size: 65px;
   font-weight: lighter;
   margin-left: 15px;
   margin-bottom: -10px;
+}
+
+h1 a{
+  font-size: 1.5em;
+}
+
+a:hover{
+  color:black;
+}
+
+form button{
+  border: none;
+  border-bottom: solid 1px black;
+  background-color: transparent;
+  color: black;
+  outline:none;
+}
+
+form button:hover{
+  color: #3281CB;
+
 }
 
 .line-one, .line-two {

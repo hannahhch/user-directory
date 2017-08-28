@@ -5,16 +5,27 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link href="https://fonts.googleapis.com/css?family=Archivo|Open+Sans" rel="stylesheet">
-
   </head>
   <body>
+    <div class = "header">
+      <div><a href = "http://localhost:3000/">Robot LinkedIn</a></div>
+  <div>
+    <form action = "/avaliable" method="post">
+      <button type = "submit" name = "availableBtn">Looking for Work</button>
+    </form>
+    <form action = "/employeed" method="post">
+      <button>Currently Employeed</button>
+    </form>
+    </div>
+  </div>
+    {{#robots}}
     <div class = "card">
       <div class = "card-top">
         <div class = "image">
           <img src = {{avatar}}>
         </div>
         <div class = "card-top-text">
-          <h1>{{name}}</h1>
+          <h2>{{name}}</h2>
           {{#job}}
             <p class = "line-one">{{#address.city}}{{address.city}},{{/address.city}} {{address.country}} | {{job}}, {{company}}</p>
             <p class = "line-two">{{email}} | {{phone}}</p>
@@ -24,7 +35,6 @@
             <p class = "line-two">{{email}} | {{phone}}</p>
 
             {{/job}}
-
         </div>
     </div>
     <div class = "card-bottom">
@@ -42,6 +52,7 @@
             {{/skills}}</td>
           </tr>
         </table>
+        {{/robots}}
 
       </div>
 

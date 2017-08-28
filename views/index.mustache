@@ -9,16 +9,20 @@
   <body>
     <div class = "wrapper">
       <div class = "header">
-        <div><h1>Index</h1></div>
+        <div><a href = "http://localhost:3000/">Robot LinkedIn</a></div>
     <div>
-        <h2><a href = "#">Looking for Work</a></h2>
-        <h2><a href = "#">Currently Employeed</a></h2>
+      <form action = "/avaliable" method="post">
+        <button type = "submit" name = "availableBtn">Looking for Work</button>
+      </form>
+      <form action = "/employeed" method="post">
+        <button>Currently Employeed</button>
+      </form>
       </div>
     </div>
       {{#robots}}
         <div class = 'boxes'>
           <p><img src = {{avatar}}></p>
-          <h3>{{name}}</h3>
+          <h3><a href = "{{id}}">{{name}}</a></h3>
           {{#job}}
           <h5>{{job}}</h4>
             <h4>{{company}}</h4>
